@@ -19,7 +19,12 @@ https://the-weather-forecasting.netlify.app
 
 - Make sure you already have `Node.js` and `npm` installed in your system.
 - You need an API key from [OpenWeatherMap](https://openweathermap.org/). After creating an account, [grab your key](https://home.openweathermap.org/api_keys).
-- Then, under the `src` directory, go to `api/OpenWeatherService` and replace `WEATHER_API_KEY` with your OpenWeatherMap API Key.
+- Then, under the `src` directory, go to `api/OpenWeatherService`.
+- To protect your api key, install dotenv 
+``` 
+npm install dotenv
+```
+replace `WEATHER_API_KEY` with your OpenWeatherMap API Key.
   - **`api/OpenWeatherService.js`**: It contains the code related to the back-end of the application.
 
 <br/>
@@ -29,13 +34,23 @@ https://the-weather-forecasting.netlify.app
 - Clone the repository:
 
 ```bash
-git clone https://github.com/Amin-Awinti/the-weather-forecasting.git
+git clone https://github.com/awssecwestafrica/React-Weather-Forecast-App.git
 
 ```
 
 - Install the packages using the command `npm install`
 
 <br/>
+
+## Using Docker
+- build image
+```
+docker build -t weather-forcast-app:v1 .
+```
+- run image in detach mode and open port
+```
+docker run -itd -p 8080:3000 weather-forcast-app:v1
+```
 
 ## 📙 Used libraries
 
@@ -44,7 +59,7 @@ git clone https://github.com/Amin-Awinti/the-weather-forecasting.git
 
 Check `packages.json` for details
 
-<br/>
+<!-- <br/>
 
 ## 📄 Todos
 
@@ -56,4 +71,4 @@ Check `packages.json` for details
 - [ ] Dark/Light Mode
 
 <br/>
-Thank You ☺
+Thank You ☺ -->
