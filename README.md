@@ -45,7 +45,7 @@ git clone https://github.com/awssecwestafrica/React-Weather-Forecast-App.git
 ## Using Docker
 - build image
 ```
-docker build -t weather-forcast-app:v1 .
+docker build -t weather-forecast-app:v1 .
 ```
 - run image in detach mode and open port
 ```
