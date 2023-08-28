@@ -160,9 +160,10 @@ function App() {
         margin: '0 auto',
         padding: '1rem 0 3rem',
         marginBottom: '1rem',
+        marginTop: '1rem',
         borderRadius: {
           xs: 'none',
-          sm: '0 0 1rem 1rem',
+          sm: '1rem 1rem 1rem 1rem',
         },
         boxShadow: {
           xs: 'none',
