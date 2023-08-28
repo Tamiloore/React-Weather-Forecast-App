@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Container, Grid, Link, SvgIcon, Typography } from '@mui/material';
+import './styles/style.css';
 import Search from './components/Search/Search';
 import WeeklyForecast from './components/WeeklyForecast/WeeklyForecast';
 import TodayWeather from './components/TodayWeather/TodayWeather';
@@ -151,7 +152,7 @@ function App() {
   }
 
   return (
-    <Container
+    <Container className="background-container"
       sx={{
         maxWidth: { xs: '95%', sm: '80%', md: '1100px' },
         width: '100%',
@@ -192,7 +193,7 @@ function App() {
 
             <UTCDatetime />
             <Link
-              href="https://github.com/Amin-Awinti"
+              href="https://github.com/UkemeSkywalker"
               target="_blank"
               underline="none"
               sx={{ display: 'flex' }}
