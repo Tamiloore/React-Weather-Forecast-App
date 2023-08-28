@@ -28,7 +28,6 @@ npm install dotenv
 ```
 REACT_APP_API_KEY = replace-this-with-your-api-key
 ```
-replace `WEATHER_API_KEY` with your OpenWeatherMap API Key.
   - **`api/OpenWeatherService.js`**: It contains the code related to the back-end of the application.
 
 <br/>
