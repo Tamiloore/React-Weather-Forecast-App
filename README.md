@@ -24,6 +24,10 @@ https://the-weather-forecasting.netlify.app
 ``` 
 npm install dotenv
 ```
+- create a .env file in your root directory, and add 
+```
+REACT_APP_API_KEY = replace-this-with-your-api-key
+```
 replace `WEATHER_API_KEY` with your OpenWeatherMap API Key.
   - **`api/OpenWeatherService.js`**: It contains the code related to the back-end of the application.
 
@@ -46,6 +50,10 @@ git clone https://github.com/awssecwestafrica/React-Weather-Forecast-App.git
 - build image
 ```
 docker build -t weather-forecast-app:v1 .
+```
+- or pull already built image from dockehub
+```
+docker pull ukemzyskywalker/weather-forecast:nginx-latest
 ```
 - run image in detach mode and open port
 ```
